@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { FiExternalLink, FiFileText } from "react-icons/fi";
+import { FiExternalLink, FiBookOpen } from "react-icons/fi";
 import { projects } from "../data/portfolioData";
 import { SectionHeading } from "./About";
 
@@ -48,20 +48,18 @@ export default function Projects() {
 
                     {/* Hover action buttons */}
                     <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <a
-                        href={project.demo}
-                        className="flex items-center gap-2 px-4 py-2 bg-white/90 hover:bg-white text-ink-900 rounded-xl text-xs font-semibold shadow-md transition-all"
-                        onClick={(e) => e.stopPropagation()}
+                      <button
+                        onClick={() => alert("Project report coming soon!")}
+                        className="flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl font-medium text-sm transition-all shadow-lg shadow-teal-500/20"
                       >
-                        <FiExternalLink size={14} /> View Project
-                      </a>
-                      <a
-                        href={project.repo}
-                        className="flex items-center gap-2 px-4 py-2 bg-ink-900/90 hover:bg-ink-900 text-white rounded-xl text-xs font-semibold shadow-md transition-all"
-                        onClick={(e) => e.stopPropagation()}
+                        <FiBookOpen size={15} /> View Full Report
+                      </button>
+                      <button
+                        onClick={(e) => e.preventDefault()}
+                        className="flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl font-medium text-sm transition-all"
                       >
-                        <FiFileText size={14} /> Report
-                      </a>
+                        <FiExternalLink size={15} /> View Project
+                      </button>
                     </div>
 
                     {project.featured && (

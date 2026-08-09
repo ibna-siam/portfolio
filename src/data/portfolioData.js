@@ -17,7 +17,7 @@ export const personal = {
   location: "Dhaka, Bangladesh",
   email: "252-58-083@diu.edu.bd",
   phone: "+880 1841-380687",
-  resumeUrl: "/portfolio/Siam CV Resume.pdf",
+  resumeUrl:"https://drive.google.com/file/d/165xHBZxrv09tpz_4p_2B5Ple-VhV_Uyt/view?usp=sharing",
   avatar: "/src/assets/siam.jpeg",
   social: {
     github: "https://github.com/ibna-siam",

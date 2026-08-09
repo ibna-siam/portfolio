@@ -84,8 +84,9 @@ export default function Hero() {
           {/* CTA buttons */}
           <motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-3 mb-8">
             <a
-              href={personal.resumeUrl}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl font-medium text-sm transition-all duration-200 shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 hover:-translate-y-0.5"
+              href="https://drive.google.com/file/d/165xHBZxrv09tpz_4p_2B5Ple-VhV_Uyt/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FiDownload size={16} />
               Download Resume
