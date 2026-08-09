@@ -84,9 +84,10 @@ export default function Hero() {
           {/* CTA buttons */}
           <motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-3 mb-8">
             <a
-              href="https://drive.google.com/file/d/165xHBZxrv09tpz_4p_2B5Ple-VhV_Uyt/view?usp=sharing"
+              href={personal.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white rounded-xl font-medium text-sm transition-all duration-200 shadow-lg shadow-teal-500/25 hover:-translate-y-0.5"
             >
               <FiDownload size={16} />
               Download Resume
@@ -107,10 +108,26 @@ export default function Hero() {
             </span>
             <div className="flex gap-3">
               {[
-                { icon: FiGithub, href: personal.social.github, label: "GitHub" },
-                { icon: FiLinkedin, href: personal.social.linkedin, label: "LinkedIn" },
-                { icon: FiTwitter, href: personal.social.twitter, label: "Twitter" },
-                { icon: FiFacebook, href: personal.social.facebook, label: "Facebook" },
+                {
+                  icon: FiGithub,
+                  href: personal.social.github,
+                  label: "GitHub",
+                },
+                {
+                  icon: FiLinkedin,
+                  href: personal.social.linkedin,
+                  label: "LinkedIn",
+                },
+                {
+                  icon: FiTwitter,
+                  href: personal.social.twitter,
+                  label: "Twitter",
+                },
+                {
+                  icon: FiFacebook,
+                  href: personal.social.facebook,
+                  label: "Facebook",
+                },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
