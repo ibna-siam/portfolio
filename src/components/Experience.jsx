@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FiBookOpen, FiAward } from "react-icons/fi";
 import { experience } from "../data/portfolioData";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./SectionHeading";
 
 export default function Experience() {
   const ref = useRef(null);

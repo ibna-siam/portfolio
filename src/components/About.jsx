@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { personal, about } from "../data/portfolioData";
 
+
 function SectionHeading({ label, title, subtitle }) {
   return (
     <div className="mb-12 text-center">

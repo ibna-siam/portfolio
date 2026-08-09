@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { skills } from "../data/portfolioData";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./SectionHeading";
 
 const CATEGORIES = ["All", "Accounting", "Software", "Soft Skills"];
 

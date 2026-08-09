@@ -8,7 +8,7 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 import { personal } from "../data/portfolioData";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./SectionHeading";
 
 export default function Contact() {
   const ref = useRef(null);
